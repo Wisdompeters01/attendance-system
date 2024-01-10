@@ -31,3 +31,5 @@ const userModel = new Schema<iUserData>(
 );
 
 export default model<iUserData>("users", userModel);
+
+//Adding to Model
