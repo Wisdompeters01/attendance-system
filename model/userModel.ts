@@ -1,13 +1,5 @@
 import { Schema, model } from "mongoose";
-
-interface iUser {
-  name: string;
-  presentTime: string;
-  signInTime: string;
-  role: string;
-}
-
-interface iUserData extends iUser, Document {}
+import { iUserData } from "../utils/interfaces";
 
 const userModel = new Schema<iUserData>(
   {
